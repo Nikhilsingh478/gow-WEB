@@ -12,7 +12,14 @@
 
 <body>
 
+    <div id="loader">
+        <h1 class="txt" id="first">THE </h1>
+        <h1 class="txt" id="second">GOD OF WAR </h1>
+        <h1 class="txt" id="third">GOD OF HOPE</h1>
+    </div>
 
+
+    <div id="cursor"></div>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
@@ -236,6 +243,43 @@
 
         // Change slide every 3 seconds
         setInterval(moveToNextSlide, 3000);
+
+
+
+        //script for cursor
+        document.addEventListener("mousemove", function(event) {
+    const cursor = document.getElementById("cursor");
+    cursor.style.left = event.clientX + 'px';
+    cursor.style.top = event.clientY + 'px';
+    
+    for (let i = 0; i < 5; i++) {
+        createSpark(event.clientX, event.clientY);
+    }
+});
+
+function createSpark(x, y) {
+    const spark = document.createElement('div');
+    spark.className = 'spark';
+    document.body.appendChild(spark);
+
+    const offsetX = (Math.random() - 0.5) * 100;
+    const offsetY = (Math.random() - 0.5) * 100;
+    spark.style.left = `${x}px`;
+    spark.style.top = `${y}px`;
+    spark.style.setProperty('--x', `${offsetX}px`);
+    spark.style.setProperty('--y', `${offsetY}px`);
+
+    // Remove the spark after the animation ends
+    spark.addEventListener('animationend', () => {
+        spark.remove();
+    });
+}
+
+
+var loader = document.querySelector("#loader")
+setTimeout(() => {
+    loader.style.top = "-100%";
+}, 6000);
 
     </script>
 </body>
