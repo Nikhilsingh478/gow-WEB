@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'lazurski';
+    src: url('LAZURSK1.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Lazurski', serif;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    /* scroll-behavior: smooth; */
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navbar-menu a:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Same shadow effect as the logo */
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #99e1f3;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.contact-me {
+    background-image: url('.//goweye1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    /* margin: 2vw; */
+}
+
+.contact-card h1 {
+    margin: 30px 20px;
+    font-size: 90px;
+}
+
+.contact-card p {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#eye{
+    height: 70%;
+    margin: 7vh 4vw;
+}
+    
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.slides img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+hr{
+    padding: 6px;
+    border: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.3);
+        width: 100%;
+        padding: 20px 0;
+        transition: left 0.3s;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .navbar-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .red{
+        flex-direction: column;
+    }
+
+    .contact-card{
+        margin: 0;
+    }
+}
+

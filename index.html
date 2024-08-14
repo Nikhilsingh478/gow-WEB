@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video canvas</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img class="w-[130px]" src="./37565-5-god-of-war-logo-photos.png" alt="">
+            </div>
+            <ul class="navbar-menu" id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://www.romspedia.com/roms/playstation-2/god-of-war#google_vignette">download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="home" class="w-full bg-zinc-900">
+        <div id="parentt" class="parent relative top-0 left-0 w-full h-[700vh]">
+            <div class="w-full sticky top-0 left-0 h-screen">
+                <canvas class="w-full h-screen" id="frame"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div >
+        <img id="about" class="w-full object-cover object-center" src="./gowinfo.jpg" alt="">
+    </div>
+
+    <hr>
+
+
+    <section id="contact" class="contact-me">
+        <div class="red flex ">
+            <div class="redimg">
+                <!-- <img id="eye" src="./go.jpg" alt=""> -->
+                <div class="slider">
+                    <div class="slides">
+                        <img src="./s1.jpg" alt="Slide 1">
+                        <img src="./s2.jpg" alt="Slide 2">
+                        <img src="./s3.jpg" alt="Slide 3">
+                        <img src="./s4.jpg" alt="Slide 4">
+                        <img src="./s5.jpg" alt="Slide 5">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <h1>Nikhil Singh</h1>
+                <p>Feel free to reach out to me through the links below:</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nikhil1863singh?igsh=c2wyMzhuNG1ibHNh" target="_blank" class="icon instagram"><svg
+                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="100"
+                            viewBox="0 0 48 48">
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035"
+                                r="44.899" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#fd5"></stop>
+                                <stop offset=".328" stop-color="#ff543f"></stop>
+                                <stop offset=".348" stop-color="#fc5245"></stop>
+                                <stop offset=".504" stop-color="#e64771"></stop>
+                                <stop offset=".643" stop-color="#d53e91"></stop>
+                                <stop offset=".761" stop-color="#cc39a4"></stop>
+                                <stop offset=".841" stop-color="#c837ab"></stop>
+                            </radialGradient>
+                            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                            </path>
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54"
+                                r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#4168c9"></stop>
+                                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                            </path>
+                            <path fill="#fff"
+                                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                            </path>
+                            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                            <path fill="#fff"
+                                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                            </path>
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/nikhil-singh-3524b4289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="100"
+                            viewBox="0 0 50 50">
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+    <script>
+        const canvas = document.querySelector("canvas");
+        const context = canvas.getContext("2d");
+
+        const frames = {
+            currentIndex: 0,
+            maxIndex: 1043
+        };
+
+        let imagesLoaded = 0;
+        const images = [];
+
+        function preloadImages() {
+            for (var i = 1; i <= frames.maxIndex; i++) {
+                const imageUrl = `./frames/frame_${i.toString().padStart(4, "0")}.jpeg`;
+                const img = new Image();
+                img.src = imageUrl;
+                img.onload = () => {
+                    imagesLoaded++;
+                    if (imagesLoaded === frames.maxIndex) {
+                        loadImage(frames.currentIndex);
+                        startAnimation();
+                    }
+                };
+                images.push(img);
+            }
+        }
+
+        function loadImage(index) {
+            if (index >= 0 && index <= frames.maxIndex) {
+                const img = images[index];
+
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                const scaleX = canvas.width / img.width;
+                const scaleY = canvas.height / img.height;
+                const scale = Math.max(scaleX, scaleY);
+
+                const newWidth = img.width * scale;
+                const newHeight = img.height * scale;
+
+                const offsetX = (canvas.width - newWidth) / 2;
+                const offsetY = (canvas.height - newHeight) / 2;
+
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.imageSmoothingEnabled = true;
+                context.imageSmoothingQuality = "high";
+                context.drawImage(img, offsetX, offsetY, newWidth, newHeight);
+                frames.currentIndex = index;
+            }
+        }
+
+        function startAnimation() {
+            var tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#parentt",
+                    start: "top top",
+                    scrub: 2,
+                    end: "bottom bottom",
+
+                }
+            });
+
+            tl.to(frames, {
+                currentIndex: frames.maxIndex,
+                onUpdate: function () {
+                    loadImage(Math.floor(frames.currentIndex));
+                }
+            });
+        }
+
+        window.addEventListener('resize', () => {
+            loadImage(frames.currentIndex);
+        });
+
+        preloadImages();
+
+
+        //sctript navbar
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+
+
+
+       
+        
+
+        //js for slider
+        const slides = document.querySelector('.slides');
+        const slideCount = slides.children.length;
+        let index = 0;
+
+        function moveToNextSlide() {
+            index = (index + 1) % slideCount;
+            slides.style.transform = `translateX(-${index * 100 / slideCount}%)`;
+        }
+
+        // Change slide every 3 seconds
+        setInterval(moveToNextSlide, 3000);
+
+    </script>
+</body>
+
+</html>
